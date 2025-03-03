@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <v-layout height="100%">
     <v-navigation-drawer v-model="drawer" color="primary" disable-resize-watcher>
       <v-list nav>
         <v-list-item v-for="item in items" :key="item" link :title="item" />
@@ -24,11 +24,12 @@
       </div>
     </v-app-bar>
 
-    <v-main :min-height="$vuetify.display.mdAndUp ? 800 : 550">
-      <v-container class="h-100 d-flex align-center justify-center">
+    <v-main class="h-100">
+      <v-container class="h-100 d-flex align-center justify-center pb-16">
         <div class="w-100 w-md-50 text-center">
           <v-chip border="thin opacity-25" color="surface" variant="flat">
-            Interested in me. Click <a class="d-inline-block mx-1 text-decoration-none text-primary" href="https://github.com/spacegt-master">here</a>
+            Interested in me. Click <a class="d-inline-block mx-1 text-decoration-none text-primary"
+              href="https://github.com/spacegt-master">here</a>
             to
             learn more.
           </v-chip>
@@ -43,9 +44,10 @@
           </div>
 
           <div class="d-flex ga-4 justify-center">
-            <v-btn class="text-none" color="primary" flat rounded="lg" text="Download" :href="url"/>
+            <v-btn class="text-none" color="primary" flat rounded="lg" text="Download" :href="url" />
 
-            <v-btn append-icon="mdi-chevron-right" class="text-none" flat rounded="lg" text="Get started" href="https://docs.spacegt.com" />
+            <v-btn append-icon="mdi-chevron-right" class="text-none" flat rounded="lg" text="Get started"
+              href="https://docs.spacegt.com" />
           </div>
         </div>
 
@@ -53,6 +55,23 @@
           <div aria-hidden="true" class="overflow-hidden opacity-20 w-100 h-100" />
         </div>
       </v-container>
+      <v-footer class="position-fixed bottom-0 w-100 d-flex flex-column">
+        <p class="py-1 text-caption text-right">
+          <v-btn variant="text" href="https://beian.miit.gov.cn/">
+            <template #prepend>
+              <img src="/icp_log.png" style="width: 16px;margin: 0 10px;">
+            </template>
+            <p class="text-caption">京 ICP 备 2021012920 号</p>
+          </v-btn>
+          <v-btn variant="text" href="https://beian.mps.gov.cn/#/query/webSearch?code=11011402053696" class="mr-2">
+            <template #prepend>
+              <img src="/beian_logo.png" style="width: 16px;margin: 0 10px;">
+            </template>
+            <p class="text-caption">京公网安备 11011402053696 号</p>
+          </v-btn>
+          &copy; 2022-{{ new Date().getFullYear() }} Spacegt. All rights reserved.
+        </p>
+      </v-footer>
     </v-main>
   </v-layout>
 </template>
