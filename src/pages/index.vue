@@ -91,7 +91,7 @@ const items = [
 const url = shallowRef()
 
 const loadVersion = () => {
-  fetch('https://spacegt.oss-cn-beijing.aliyuncs.com/spacegt/latest.json')
+  fetch('https://updater.spacegt.com/spacegt/latest.json')
     .then((response) => response.json())
     .then((response) => {
       url.value = response.platforms['windows-x86_64'].url
