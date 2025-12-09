@@ -3,23 +3,41 @@
 layout: home
 
 hero:
-  name: "spacegt-www"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Blogs"
+  text: "Shuo Wang - 王硕"
+  tagline: Creative Vision Zonal Join (CVZJ)：用AI和自动化重新定义居家设计与网络基础设施。
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      # 链接到您的 CVZJ 项目详情页
+      text: 探索 CVZJ 项目 🚀
+      link: /projects/cvzj 
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      # 链接到您的技术博客/研究文章
+      text: 我的技术分享 💻
+      link: /posts/index
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+  - title: 💻 核心专业技能：网络与架构
+    details: 我专注于设计、部署和优化大规模分布式网络系统。拥有 cvzj.com 和 spacegt.com 的基础设施实践经验，热衷于高可用性和性能调优。
+    # 链接到您的网络工程相关文章
+    link: /posts/network-eng
+    linkText: 查看工程实践
 
+  - title: 🤖 AI Agent 与自动化
+    details: 对 AI Agent 领域有浓厚兴趣，目前正将其核心理念融入 CVZJ 项目，目标是利用自动化和智能算法简化复杂的家居设计与网络配置。
+    # 链接到您的 AI/研究相关文章
+    link: /posts/ai-agent-research
+    linkText: 深入研究
+
+  - title: 📸 摄影与骑行：记录生活之美
+    details: 捕捉世界，从不停止探索。使用 SONY A7M3 和 SIGMA Art 镜头进行摄影创作；骑行迪卡侬 RC 100 探索城市与自然。同时享受音乐、电影和动漫。
+    # 链接到您的兴趣/爱好页面
+    link: /interests/photography
+    linkText: 走进我的生活
+
+  - title: 💡 终身学习者：掌握新技能
+    details: 保持学习的激情，目前正在自学日语，并严格执行“11点前睡觉、7点起床”的健康作息计划，确保高效率和持续成长。
+    # 链接到您的日语笔记或关于我
+    link: /interests/japanese-notes
+    linkText: 查看学习笔记
+---
