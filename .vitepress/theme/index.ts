@@ -2,6 +2,7 @@
 
 import DefaultTheme from "vitepress/theme";
 import FooterCustom from "./FooterCustom.vue";
+import './style.css'
 import { h } from "vue";
 
 export default {

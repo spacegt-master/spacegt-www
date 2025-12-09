@@ -1,9 +1,12 @@
 import { defineConfig } from "vitepress";
 
 const postsSidebar = [
-  { text: "技术分享", link: "/posts/index" },
-  { text: "CVZJ 项目日志", link: "/posts/cvzj-log" },
-  { text: "网络工程实践", link: "/posts/network-eng" },
+  { text: "技术分享", link: "/posts/" },
+  { text: "架构师视角：LangChain——AI Agent 时代的“操作系统”", link: "/posts/langchain-introduction" },
+  { text: "LangChain 哲学：AI Agent 的操作系统", link: "/posts/langchain-philosophy" },
+  { text: "⛓️ Flows 与 Chaining：构建柔性执行骨架", link: "/posts/langchain-chains-flow" },
+  { text: "🛠️ Tools 与 Agents：掌控异构资源与自主权", link: "/posts/langchain-agents-tools" },
+  { text: "🌌 RAG 实践：连接私有知识与 LLM 的未来", link: "/posts/langchain-rag-vision" },
 ];
 
 const interestSidebar = [
@@ -21,6 +24,8 @@ export default defineConfig({
   lang: "zh-CN", // 设定语言，有利于 SEO 和可访问性
 
   themeConfig: {
+    logo: '/images/logo.png',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
@@ -79,5 +84,5 @@ export default defineConfig({
     outline: {
         label: '本页目录'
     }
-  },
+  } 
 });
